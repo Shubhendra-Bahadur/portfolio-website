@@ -1,5 +1,5 @@
 const navmenu=document.getElementById('nav-menu'),
-      togglemenu=document.getElementById('nav-toggle'),
+      togglemenu=document.getElementById('nav_toggle'),
       closemenu=document.getElementById('nav-close')
 
 // show
