@@ -187,7 +187,7 @@ img{
 }
 
 .nav_link:hover{
-    color:grey;
+    color:rgb(238, 190, 190);
 }
 
 .nav_toggle
@@ -736,6 +736,7 @@ img{
 
 @media screen and (min-width:1024px)
 {
+
     body
     {
         margin:0;
@@ -761,8 +762,14 @@ img{
 
     }
 
+    .resume-download
+    {
+        margin-top:-80px;
+        text-align: center;
+    }
+
     .section{
-        padding:3rem 0 2rem;
+        padding:4.3rem 0 2rem;
     }
 
     .bd-grid{
@@ -800,6 +807,10 @@ img{
         margin-bottom:1rem;
     }
     
+    .about
+    {
+        padding-top:5.4rem;
+    }
     .about_description
     {
         margin-bottom: 1.5rem;
