@@ -59,10 +59,14 @@
             <h1 class="home_title">Shubhendra Bahadur Srivastava</h1>
             <span class="home_profession">Frontend Developer</span>
             <div class="home_social">
-              <a href="https://www.linkedin.com/in/shubhendra-bahadur/" class="home_social-link"
+              <a
+                href="https://www.linkedin.com/in/shubhendra-bahadur/"
+                class="home_social-link"
                 ><i class="bx bxl-linkedin"></i
               ></a>
-              <a href="https://github.com/Shubhendra-Bahadur" class="home_social-link"
+              <a
+                href="https://github.com/Shubhendra-Bahadur"
+                class="home_social-link"
                 ><i class="bx bxl-github"></i
               ></a>
             </div>
@@ -307,28 +311,41 @@
         <h2 class="section-title">Get In Touch</h2>
 
         <div class="contact_container bd-grid">
-          <form action="mailto:shubhendrabahadur6@gmail.com" class="contact_form" method='post' enctype='text/plain'>
+          <form
+            action="https://formspree.io/f/xrgolbod"
+            class="contact_form"
+            method="POST"
+          >
             <div class="contact_inputs">
-              <input type="text" placeholder="Name" class="contact_input" />
               <input
-                type="mail"
+                type="text"
+                placeholder="Name"
+                class="contact_input"
+                name="name"
+                required
+              />
+              <input
+                type="email"
                 placeholder="Your email"
                 class="contact_input"
+                name="Mail-Id"
+                required
               />
             </div>
             <textarea
-              name=""
-              id=""
               cols="30"
               rows="0"
               placeholder="Your message"
               class="contact_input"
+              name="Message"
+              required
             ></textarea>
-            <input
+            <button
               type="submit"
-              value="Send Message"
               class="button contact_button"
-            />
+              required>
+              Send Message
+            </button>
           </form>
           <div>
             <div class="contact_info">
