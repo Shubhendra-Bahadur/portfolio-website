@@ -10,7 +10,6 @@
   --font-bold: 700;
 
   /* --color-- */
-  --first-color: blue;
   --first-color-darken:rgb(19, 19, 53);
   /* --font and typography-- */
   --body-font: "poppins", sans-serif;
@@ -157,7 +156,7 @@ img{
     padding:3rem;
     display:flex;
     align-items: center;
-    background-color:var(--first-color);
+    background:linear-gradient(120deg,#06062b,#18275f);
     transition:.5s;
 }
 
@@ -167,7 +166,7 @@ img{
     top:1rem;
     right:1rem;
     font-size:2rem;
-    color:black;
+    color:white;
     cursor: pointer;
 
 }
@@ -377,7 +376,7 @@ img{
 .skills_subtitle
 {
     font-size:var(--h3-font-size);
-    color:red;
+    color:#000000;
     margin-bottom: var(--mb2);
 }
 
@@ -400,7 +399,22 @@ img{
     position: absolute;
     bottom:-.75rem;
     height:.25rem;
-    background-color:red;
+    background-color:#0f28b5;
+}
+
+.skills_java
+{
+    width:80%
+}
+
+.skills_cpp
+{
+    width:40%
+}
+
+.skills_python
+{
+    width:40%
 }
 
 .skills_html
@@ -527,7 +541,7 @@ img{
 {
     display:inline-flex;
     font-size:1.5rem;
-    background-color: var(--first-color);
+    background-color: blue;
     color:red;
     padding:.25rem;
     border-radius: .25rem;
@@ -645,3 +659,101 @@ img{
     color:white;
 }
 
+/* media queries */
+@media screen and (min-width:768px)
+{
+    .home_button
+    {
+        width:initial;
+    }
+
+    .nav_menu{
+        width:var(--nav-width);
+    }
+
+    .about_container,.skills_container,.projects_container,.contact_container,.contact_inputs{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about_data{
+        text-align:initial;
+    }
+
+    .about_description{
+        margin-bottom: var(--mb5);
+    }
+
+    .about_information{
+        padding-left:4rem;
+    }
+
+    .education_time{
+        padding:0 2rem;
+    }
+    
+    .project
+    {
+        background:none;
+    }
+
+    .contact_inputs{
+        display:grid;
+        column-gap:1.5rem;
+    }
+
+    .contact_info{
+        padding-left:3rem;
+    }
+
+    .footer{
+        background:none;
+    }
+
+    .footer_container
+    {
+        background-color:rgb(3, 3, 56);
+        padding:3rem 0;
+        border-radius:.5rem;
+    }
+}
+
+@media screen and (min-width:1024px)
+{
+    body
+    {
+        margin:0;
+        padding-left: var(--nav-width);
+    }
+
+    .l-header
+    {
+        width:0;
+    }
+
+    .nav_toggle,.nav_logo,.nav_close{
+        display:none;
+    }
+
+    .nav_menu{
+        left:0;
+    }
+
+    .home_container
+    {
+        height:100vh;
+
+    }
+
+    .section{
+        padding:3rem 0 2rem;
+    }
+
+    .bd-grid{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .projects_container{
+        grid-template-columns:repeat(3,1fr);
+    }
+}

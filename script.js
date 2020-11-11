@@ -36,13 +36,13 @@ function scrollActive()
     sections.forEach(current=>
         {
             const sectionHeight=current.offsetHeight;
-            const sectionTop=current.offsetTop;
+            const sectionTop=current.offsetTop-50;
             sectionId=current.getAttribute('id');
            // console.log(sectionHeight+" "+sectionTop+" "+sectionId);
 
             if(scrollY>sectionTop && scrollY<sectionTop+sectionHeight)
             {
-                //console.log(document.querySelector('.nav_menu a[href*='+sectionId+']'));
+                //console.log(current);
                 document.querySelector('.nav_menu a[href*='+sectionId+']').classList.add('active');
             }
             else{
