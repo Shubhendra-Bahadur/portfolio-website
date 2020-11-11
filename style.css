@@ -79,6 +79,7 @@ ul{
 a{
     text-decoration: none;
     color:var(--first-color-darken);
+    text-align: center;
 }
 
 img{
@@ -441,6 +442,22 @@ img{
 {
     width:70%
 }
+.skills_git
+{
+    width:60%
+}
+.skills_eclipse
+{
+    width:70%
+}
+.skills_bootstrap
+{
+    width:60%
+}
+.skills_jupyter
+{
+    width:50%
+}
 
 /* ----education---- */
 .education_container
@@ -756,4 +773,41 @@ img{
     .projects_container{
         grid-template-columns:repeat(3,1fr);
     }
+}
+
+@media screen and (max-height:450px)
+{
+    
+    .home_container
+    {
+        position: relative;
+        top:var(--header-height);
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .home_button
+    {
+        width:100%;
+    }
+
+    .home_image{
+        width:130px;
+        height:130px;
+        margin-top:1rem;
+    }
+
+    .home_profession{
+        margin-bottom:1rem;
+    }
+    
+    .about_description
+    {
+        margin-bottom: 1.5rem;
+    }
+
+    .about_image{
+        width:130px;
+        height:130px;
+    }
+
 }
