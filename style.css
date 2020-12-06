@@ -405,7 +405,7 @@ img{
 
 .skills_java
 {
-    width:80%
+    width:70%
 }
 
 .skills_cpp
@@ -420,28 +420,28 @@ img{
 
 .skills_html
 {
-    width:80%
-}
-
-.skills_js
-{
-    width:70%
-}
-
-.skills_react
-{
     width:70%
 }
 
 .skills_js
 {
-    width:70%
+    width:60%
+}
+
+.skills_react
+{
+    width:60%
+}
+
+/* .skills_js
+{
+    width:60%
 }
 
 .skills_react
 {
     width:70%
-}
+} */
 .skills_git
 {
     width:60%
